@@ -1,6 +1,6 @@
 import React from 'react';
-import Welcome from '../lib/Welcome.js';
 import { shallow, mount } from 'enzyme';
+import Welcome from '../lib/Welcome.js';
 
 describe('Welcome functionality', () => {
   it('should change state when search input changed', () => {
