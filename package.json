@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/turingschool-examples/react-starter-kit.git"
+    "url": "https://github.com/johnmboudreaux/Weatherly-App"
   },
   "jest": {
     "moduleNameMapper": {
@@ -18,12 +18,12 @@
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
-  "author": "Steve Kinney",
+  "author": "Jonn Michael B",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/turingschool-examples/react-starter-kit/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/react-starter-kit",
+  "homepage": "https://github.com/johnmboudreaux/Weatherly-App",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.24.1",
