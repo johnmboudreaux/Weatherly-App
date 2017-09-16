@@ -7,7 +7,8 @@
     "node": true
   },
   "rules": {
-    "arrow-body-style": ["error", "always"],
+    "no-unused-expressions": 0,
+    "arrow-body-style": ["error", "never"],
     "quotes": [2, "single"],
     "eol-last": [0],
     "no-mixed-requires": [0],
