@@ -1,0 +1,31 @@
+h1 {
+  color: rgba(199, 30, 27, 1);
+  font-family: 'Carter One', cursive;
+  font-size: 50px;
+  margin-top: 25px;
+  padding-top: 75px;
+}
+
+.search-form {
+  background-size: 100%;
+  background-image: url(../assets/duck.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.location-search {
+  height: 30px;
+  width: 300px;
+}
+
+.welcome-message {
+  margin:0px auto 450px auto;
+}
+
+.user-inputs {
+  display: flex;
+  justify-content: center;
+}
