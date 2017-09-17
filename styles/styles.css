@@ -28,7 +28,6 @@ body {
   margin: 0 auto 20px auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  /*padding: 0 80px 0 80px;*/
   display: flex;
   align-self: center;
 }
@@ -114,12 +113,82 @@ p {
   width: 100%;
 }
 
-/*body{
-  background-image: url(../assets/duck.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+.current-weather {
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  width: 500px;
+  /*height: 150px;*/
+  margin: 10px auto 10px auto;
+}
 
-}*/
+.city,
+.day-of-week,
+.conditions {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.day-of-week {
+
+}
+
+.date,
+.high,
+.low {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.conditions {
+
+}
+
+.high {
+
+}
+
+.low {
+
+}
+
+.icon {
+  height: 65px;
+}
+
+.hourly-card {
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  margin: 5px auto 5px auto;
+  width: 175px;
+  height: 150px;
+}
+
+.daily-card {
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  margin: 5px auto 5px auto;
+  padding-top: 10px;
+  width: 175px;
+  height: 190px;
+}
+
+.day-of {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.daily-icon-status {
+  margin-bottom: 7px;
+}
+
+.daily-icon,
+.daily-high,
+.daily-low {
+  margin-bottom: 5px;
+}
+
+
+
 
 /*.drop {
   background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,.7) ), to(rgba(255,255,255,0.6))  );
