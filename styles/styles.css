@@ -2,11 +2,13 @@
   box-sizing: border-box;
 }
 
+
+
 h1 {
   color: rgba(199, 30, 27, 1);
-  font-family: 'Carter One', cursive;
+  font-family: 'Carter One', sans-serif;
   font-size: 50px;
-  margin-top: 25px;
+  margin: 25px, auto, 0px, auto;
   padding-top: 75px;
 }
 
@@ -16,15 +18,6 @@ li {
   font-size: 20px;
 }
 
-.search-form {
-  background-size: cover;
-  background-image: url(../assets/duck.jpg);
-  background-repeat: cover;
-  background-position: center;
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-}
 
 .location-search {
   font-size: 24px;
@@ -59,4 +52,39 @@ li {
 
 .sub-btn {
   font-size: 15px;
+}
+
+.search-form {
+  /*background-image: url(../assets/duck.jpg);
+  background-repeat: cover;
+  background-position: center;*/
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+body{
+  background-image: url(../assets/duck.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.drop {
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,.7) ), to(rgba(255,255,255,0.6))  );
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.3) 100%);
+  width:1px;
+  height:89px;
+  position: absolute;
+  bottom:200px;
+  -webkit-animation: fall .93s linear infinite;
+  -moz-animation: fall .93s linear infinite;
+  z-index: -1;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+  to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+  to {margin-top:900px;}
 }
