@@ -1,12 +1,60 @@
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
-h1 {
+body {
+  font-family: 'Open Sans';
+		height: 100%;
+		/*background-color: #ffffff;*/
+		background-image: -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		background-image:  -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		background-image:  -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		background-image:  linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		/*background-repeat: repeat,			no-repeat,			no-repeat;*/
+		background-size: 100%, 100%, cover,				cover;
+		background-position: top left,		center center,		bottom center;
+		background-attachment: fixed,			fixed,				fixed;
+	}
+
+  .form-background{
+    background-color: #FFF;
+    width:70%;
+    margin: 125px auto 0px auto;
+
+  }
+.avatar img{
+  border-radius: 100%;
+  margin: 0 auto 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*padding: 0 80px 0 80px;*/
+  display: flex;
+  align-self: center;
+}
+
+.welcome-header{
+  width: 80%;
+  margin: auto;
+}
+
+.header-content{
+  width:66%;
+  margin: 0 auto 0 auto;
+}
+
+.welcome-type{
+  /*padding: 0 30px 0 30px;*/
+}
+h1{
+  font-size: 20px;
+  margin: auto;
+}
+/*h1 {
   color: rgba(199, 30, 27, 1);
-  font-family: 'Carter One', cursive;
+  font-family: 'Carter One', sans-serif;
   font-size: 50px;
-  margin-top: 25px;
+  margin: 25px, auto, 0px, auto;
   padding-top: 75px;
 }
 
@@ -16,15 +64,6 @@ li {
   font-size: 20px;
 }
 
-.search-form {
-  background-size: cover;
-  background-image: url(../assets/duck.jpg);
-  background-repeat: cover;
-  background-position: center;
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-}
 
 .location-search {
   font-size: 24px;
@@ -60,3 +99,38 @@ li {
 .sub-btn {
   font-size: 15px;
 }
+
+.search-form {*/
+  /*background-image: url(../assets/duck.jpg);
+  background-repeat: cover;
+  background-position: center;*/
+  /*height: 100vh;
+  text-align: center;
+  width: 100%;
+}*/
+/*
+body{
+  background-image: url(../assets/duck.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}*/
+/*.drop {
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,.7) ), to(rgba(255,255,255,0.6))  );
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.3) 100%);
+  width:1px;
+  height:89px;
+  position: absolute;
+  bottom:200px;
+  -webkit-animation: fall .93s linear infinite;
+  -moz-animation: fall .93s linear infinite;
+  z-index: -1;
+}
+
+/* animate the drops*/
+/*@-webkit-keyframes fall {
+  to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+  to {margin-top:900px;}
+}*/
