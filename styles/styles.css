@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   color: rgba(199, 30, 27, 1);
   font-family: 'Carter One', cursive;
@@ -6,10 +10,16 @@ h1 {
   padding-top: 75px;
 }
 
+li {
+  color: rgba(175, 237, 237, 1);
+  font-family: 'Carter One', cursive;
+  font-size: 20px;
+}
+
 .search-form {
-  background-size: 100%;
+  background-size: cover;
   background-image: url(../assets/duck.jpg);
-  background-repeat: no-repeat;
+  background-repeat: cover;
   background-position: center;
   height: 100vh;
   text-align: center;
@@ -17,8 +27,9 @@ h1 {
 }
 
 .location-search {
-  height: 30px;
-  width: 300px;
+  font-size: 24px;
+  height: 35px;
+  width: 350px;
 }
 
 .welcome-message {
@@ -28,4 +39,24 @@ h1 {
 .user-inputs {
   display: flex;
   justify-content: center;
+}
+
+.add-suggestions {
+  overflow-y: scroll;
+  background: #fff;
+  width: 416px;
+  max-height: 150px;
+  display: inline-block;
+}
+
+.anchor-links {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.sub-btn {
+  font-size: 15px;
 }
