@@ -1,34 +1,33 @@
+
+
 * {
   box-sizing: border-box;
   text-align: center;
 }
 
 body {
-  font-family: 'Open Sans';
-		height: 100%;
-		/*background-color: #ffffff;*/
-		background-image: -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-		background-image:  -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-		background-image:  -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-		background-image:  linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-		/*background-repeat: repeat,			no-repeat,			no-repeat;*/
-		background-size: 100%, 100%, cover,				cover;
-		background-position: top left,		center center,		bottom center;
-		background-attachment: fixed,			fixed,				fixed;
-	}
+  font-family: 'Source Sans Pro', sans-serif;
+	height: 100%;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left,		center center,		bottom center;
+	background-attachment: fixed,			fixed,				fixed;
+  background-image: url(../assets/clouds.png);
+}
 
-  .form-background{
-    background-color: #FFF;
-    width:70%;
-    margin: 125px auto 0px auto;
+.form-background{
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  /*height: 610px;*/
+  width:50%;
+  margin: 135px auto 0px auto;
+}
 
-  }
 .avatar img{
   border-radius: 100%;
   margin: 0 auto 20px auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  /*padding: 0 80px 0 80px;*/
   display: flex;
   align-self: center;
 }
@@ -43,36 +42,48 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.welcome-type{
-  /*padding: 0 30px 0 30px;*/
+hr {
+  width: 95%;
+  margin: 0 auto 50px auto;
 }
+
 h1{
-  font-size: 20px;
+  font-size: 36px;
   margin: auto;
-}
-/*h1 {
-  color: rgba(199, 30, 27, 1);
-  font-family: 'Carter One', sans-serif;
-  font-size: 50px;
-  margin: 25px, auto, 0px, auto;
-  padding-top: 75px;
+  padding-bottom: 15px;
+  font-weight: 600;
 }
 
 li {
-  color: rgba(175, 237, 237, 1);
-  font-family: 'Carter One', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
+  text-align: left;
 }
 
-
 .location-search {
-  font-size: 24px;
+  font-size: 1.25em;
+  text-align: left;
+  margin-bottom: 15px;
   height: 35px;
-  width: 350px;
+  width: 66%;
+}
+
+.second-search {
+    font-size: 1.25em;
+    text-align: left;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 66%;
+}
+
+p {
+  font-size: 1.25em;
+  margin-bottom: 5px;
 }
 
 .welcome-message {
   margin:0px auto 450px auto;
+  margin-bottom: 50px;
 }
 
 .user-inputs {
@@ -89,32 +100,117 @@ li {
 }
 
 .anchor-links {
-    border-bottom: 1px solid #ccc;
-    padding: 5px;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
 }
 
 .sub-btn {
   font-size: 15px;
+  height: 35px;
 }
 
 .search-form {*/
-  /*background-image: url(../assets/duck.jpg);
+  background-image: url(../assets/duck.jpg);
   background-repeat: cover;
   background-position: center;*/
-  /*height: 100vh;
+  height: 100vh;
   text-align: center;
   width: 100%;
-}*/
-/*
-body{
-  background-image: url(../assets/duck.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+}
 
+.current-weather {
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  width: 500px;
+  margin: 35px auto 65px auto;
+}
+
+.city,
+.day-of-week,
+.conditions {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.day-of-week {
+
+}
+
+.date,
+.high,
+.low {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.conditions {
+
+}
+
+.high {
+
+}
+
+.low {
+
+}
+
+.icon {
+  height: 65px;
+}
+
+/*div .ten-day-title,
+div .seven-hour-title {
+  font-size: ;
 }*/
+
+.hourly-card {
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  margin: 5px auto 20px auto;
+  width: 175px;
+  padding: 10px;
+}
+
+.hourly-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.daily-card {
+  border-radius: 10px;
+  background-color: rgba(47, 116, 200, .3);
+  margin: 5px auto 5px auto;
+  padding-top: 10px;
+  width: 175px;
+  height: 190px;
+}
+
+.daily-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.day-of {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.daily-icon-status {
+  margin-bottom: 7px;
+}
+
+.daily-icon,
+.daily-high,
+.daily-low {
+  margin-bottom: 5px;
+}
+
 /*.drop {
   background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,.7) ), to(rgba(255,255,255,0.6))  );
   background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.3) 100%);
