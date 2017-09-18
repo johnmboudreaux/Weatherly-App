@@ -17,4 +17,14 @@ describe('Search', () => {
 
     expect(search.state('location')).toEqual('Baton Rouge');
   });
+
+  it('fire a function on click', () => {
+    const mkFun = jest.fn()
+    const search = mount(<Search getData={mkFun}/>);
+    const btn = search.find('button');
+    console.log(btn.debug())
+    btn.simulate('click')
+
+    expect(mkFun).toHaveBeenCalledTimes(1)
+  });
 });
