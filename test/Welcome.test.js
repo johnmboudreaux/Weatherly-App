@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Welcome from '../lib/Welcome.js';
 
-describe('Welcome functionality', () => {
-  it('should change state when search input changed', () => {
+describe('Welcome', () => {
+  it('should have a ', () => {
     const welcome = shallow(<Welcome />);
     const input = welcome.find('input');
 

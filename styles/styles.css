@@ -12,12 +12,12 @@ body {
 	background-size: cover;
 	background-position: top left,		center center,		bottom center;
 	background-attachment: fixed,			fixed,				fixed;
-  background-image: url(../assets/clouds.png);
+  background-image: url('../images/clouds.png');
 }
 
 .form-background{
   border-radius: 10px;
-  background-color: rgba(47, 116, 200, .3);
+  background-color: rgba(81, 104, 131, .3);
   /*height: 610px;*/
   width:50%;
   margin: 135px auto 0px auto;
@@ -49,8 +49,8 @@ hr {
 
 h1{
   font-size: 36px;
-  margin: auto;
-  padding-bottom: 15px;
+  margin-bottom: 36px;
+  padding: 15px 0 0 0;
   font-weight: 600;
 }
 
@@ -113,7 +113,7 @@ p {
 }
 
 .search-form {*/
-  background-image: url(../assets/duck.jpg);
+  background-image: url(../images/duck.jpg);
   background-repeat: cover;
   background-position: center;*/
   height: 100vh;
@@ -123,7 +123,7 @@ p {
 
 .current-weather {
   border-radius: 10px;
-  background-color: rgba(47, 116, 200, .3);
+  background-color: rgba(81, 104, 131, .3);
   width: 500px;
   margin: 35px auto 65px auto;
 }
@@ -132,22 +132,51 @@ p {
 .day-of-week,
 .conditions {
   font-size: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.day-of-week {
+.conditions {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 0 5px 10px;
+}
 
+/*.conditions-wrapper {
+  display: flex;
+  justify-content: center;
+}*/
+
+.day-of-week {
+  margin: 0 10px 10px 0;
 }
 
 .date,
 .high,
 .low {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
-.conditions {
+.conditions-wrapper,
+.date-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
 
+.high-low-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.high {
+  margin: 0 10px 10px 0;
+}
+
+.low {
+  margin: 0 0 10px 10px;
 }
 
 .high {
@@ -159,17 +188,18 @@ p {
 }
 
 .icon {
-  height: 65px;
+  height: 35px;
+  margin: 0 10px 5px 0;
 }
 
-/*div .ten-day-title,
+div .ten-day-title,
 div .seven-hour-title {
-  font-size: ;
-}*/
+  font-size: 36px;
+}
 
 .hourly-card {
   border-radius: 10px;
-  background-color: rgba(47, 116, 200, .3);
+ background-color: rgba(81, 104, 131, .3);
   margin: 5px auto 20px auto;
   width: 175px;
   padding: 10px;
@@ -183,7 +213,7 @@ div .seven-hour-title {
 
 .daily-card {
   border-radius: 10px;
-  background-color: rgba(47, 116, 200, .3);
+  background-color: rgba(81, 104, 131, .3);
   margin: 5px auto 5px auto;
   padding-top: 10px;
   width: 175px;
