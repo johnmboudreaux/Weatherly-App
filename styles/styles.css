@@ -18,7 +18,7 @@ body {
 .form-background{
   border-radius: 10px;
   background-color: rgba(47, 116, 200, .3);
-  height: 610px;
+  /*height: 610px;*/
   width:50%;
   margin: 135px auto 0px auto;
 }
@@ -61,16 +61,24 @@ li {
 }
 
 .location-search {
-  font-size: 24px;
+  font-size: 1.25em;
   text-align: left;
   margin-bottom: 15px;
   height: 35px;
-  width: 350px;
+  width: 66%;
+}
+
+.second-search {
+    font-size: 1.25em;
+    text-align: left;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 66%;
 }
 
 p {
-  font-size: 25px;
-  margin-bottom: 30px;
+  font-size: 1.25em;
+  margin-bottom: 5px;
 }
 
 .welcome-message {
@@ -117,8 +125,7 @@ p {
   border-radius: 10px;
   background-color: rgba(47, 116, 200, .3);
   width: 500px;
-  /*height: 150px;*/
-  margin: 10px auto 10px auto;
+  margin: 35px auto 65px auto;
 }
 
 .city,
@@ -155,12 +162,23 @@ p {
   height: 65px;
 }
 
+/*div .ten-day-title,
+div .seven-hour-title {
+  font-size: ;
+}*/
+
 .hourly-card {
   border-radius: 10px;
   background-color: rgba(47, 116, 200, .3);
-  margin: 5px auto 5px auto;
+  margin: 5px auto 20px auto;
   width: 175px;
-  height: 150px;
+  padding: 10px;
+}
+
+.hourly-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .daily-card {
@@ -170,6 +188,12 @@ p {
   padding-top: 10px;
   width: 175px;
   height: 190px;
+}
+
+.daily-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .day-of {
@@ -186,9 +210,6 @@ p {
 .daily-low {
   margin-bottom: 5px;
 }
-
-
-
 
 /*.drop {
   background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,.7) ), to(rgba(255,255,255,0.6))  );
