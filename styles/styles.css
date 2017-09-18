@@ -214,9 +214,9 @@ div .seven-hour-title {
 .daily-card {
   border-radius: 10px;
   background-color: rgba(81, 104, 131, .3);
-  margin: 5px auto 5px auto;
+  margin: 5px;
   padding-top: 10px;
-  width: 175px;
+  width:250px;
   height: 190px;
 }
 
