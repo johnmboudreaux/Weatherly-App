@@ -5,7 +5,7 @@ import Trie from '../utils/Trie.js'
 
 describe('Search', () => {
   it('should change state baced on the input', () => {
-    const search = mount(<Search getData={jest.fn()}/>);
+    const search = mount(<Search />);
     const input = search.find('input');
 
 
