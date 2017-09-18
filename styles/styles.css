@@ -192,10 +192,10 @@ p {
   margin: 0 10px 5px 0;
 }
 
-/*div .ten-day-title,
+div .ten-day-title,
 div .seven-hour-title {
-  font-size: ;
-}*/
+  font-size: 36px;
+}
 
 .hourly-card {
   border-radius: 10px;
