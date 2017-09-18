@@ -1,23 +1,20 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Search from '../lib/Search.js';
-import CompleteMe from '../utils/Trie';
-import CityList from '../utils/CityList';
+import Trie from '../utils/Trie.js'
 
 describe('Search', () => {
-  it('should have a ', () => {
-    const search = mount(<Search getData={ jest.fn() }/>);
+  it('should change state baced on the input', () => {
+    const search = mount(<Search />);
     const input = search.find('input');
-    // const trie = new CompleteMe();
-    // trie.populate(CityList);
-    const btn = search.find('button');
+
 
     expect(search.state('location')).toEqual('');
 
-    const userInput = { target: { value: 'Baton Rouge, LA' } };
-    input.simulate('change', userInput);
-    btn.simulate('click');
+    const inputValue = { target: { value: 'Baton Rouge' } };
 
-    expect(search.state('location')).toEqual('Baton Rouge, LA');
+    input.simulate('change', inputValue);
+
+    expect(search.state('location')).toEqual('Baton Rouge');
   });
 });
