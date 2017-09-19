@@ -3,16 +3,15 @@ import { shallow, mount } from 'enzyme';
 import HourlyCards from '../lib/HourlyCards';
 import App from '../lib/App';
 import HourlyCard from '../lib/HourlyCard';
+import mockData from '../test/mockData'
 
 describe('HourlyCards', () => {
-  const hourCards = hourlyCardsArray.map((card, index) => {
-    return <HourlyCard cardObject={card}
-                       key={index}/>;
-  });
+  const hourlyData = mockData.hourly_forecast.splice(0, 7)
   it('should render hourly cards', () => {
-    const sevenHourCards = shallow(<HourlyCards
-   hourlyCardsArray={hourlyCards.hourly_forecast}
+    const sevenHourCards = mount(<HourlyCards
+          hourlyCardsArray={hourlyData}
  />);
-    expect(sevenHourCards.find('HourlyCard'.length)).toEqual(7);
+    expect(sevenHourCards.find('.hourly-cards')).toBeDefined();
+    expect(sevenHourCards.find('HourlyCard').length).toEqual(7);
   });
 });
