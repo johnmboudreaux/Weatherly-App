@@ -250,11 +250,11 @@ div .seven-hour-title {
   bottom:200px;
   -webkit-animation: fall .93s linear infinite;
   -moz-animation: fall .93s linear infinite;
-  z-index: -1;
+  z-index: 1;
 }
 
-/* animate the drops*/
-/*@-webkit-keyframes fall {
+ animate the drops
+@-webkit-keyframes fall {
   to {margin-top:900px;}
 }
 @-moz-keyframes fall {
