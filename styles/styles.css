@@ -1,94 +1,6 @@
-
-
 * {
   box-sizing: border-box;
   text-align: center;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-	height: 100%;
-  background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top left,		center center,		bottom center;
-	background-attachment: fixed,			fixed,				fixed;
-  background-image: url('../images/clouds.png');
-}
-
-.form-background{
-  border-radius: 10px;
-  background-color: rgba(81, 104, 131, .3);
-  /*height: 610px;*/
-  width:50%;
-  margin: 135px auto 0px auto;
-}
-
-.avatar img{
-  border-radius: 100%;
-  margin: 0 auto 20px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  align-self: center;
-}
-
-.welcome-header{
-  width: 80%;
-  margin: auto;
-}
-
-.header-content{
-  width:66%;
-  margin: 0 auto 0 auto;
-}
-
-hr {
-  width: 95%;
-  margin: 0 auto 50px auto;
-}
-
-h1{
-  font-size: 36px;
-  margin-bottom: 36px;
-  padding: 15px 0 0 0;
-  font-weight: 600;
-}
-
-li {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  text-align: left;
-}
-
-.location-search {
-  font-size: 1.25em;
-  text-align: left;
-  margin-bottom: 15px;
-  height: 35px;
-  width: 66%;
-}
-
-.second-search {
-    font-size: 1.25em;
-    text-align: left;
-    margin-bottom: 15px;
-    height: 35px;
-    width: 66%;
-}
-
-p {
-  font-size: 1.25em;
-  margin-bottom: 5px;
-}
-
-.welcome-message {
-  margin:0px auto 450px auto;
-  margin-bottom: 50px;
-}
-
-.user-inputs {
-  display: flex;
-  justify-content: center;
 }
 
 .add-suggestions {
@@ -107,18 +19,22 @@ p {
   display: inline-block;
 }
 
-.sub-btn {
-  font-size: 15px;
-  height: 35px;
+.avatar img{
+  border-radius: 100%;
+  margin: 0 auto 20px auto;
+  padding-top: 20px 0 20px 0;
+  display: flex;
+  align-self: center;
 }
 
-.search-form {*/
-  background-image: url(../images/duck.jpg);
-  background-repeat: cover;
-  background-position: center;*/
-  height: 100vh;
-  text-align: center;
-  width: 100%;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+	height: 100%;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left,		center center,		bottom center;
+	background-attachment: fixed,			fixed,				fixed;
+  background-image: url('../images/clouds.png');
 }
 
 .current-weather {
@@ -142,13 +58,16 @@ p {
   margin: 0 0 5px 10px;
 }
 
-/*.conditions-wrapper {
+.conditions-wrapper,
+.date-wrapper {
   display: flex;
   justify-content: center;
-}*/
+  margin-bottom: 12px;
+}
 
-.day-of-week {
-  margin: 0 10px 10px 0;
+div .ten-day-title,
+div .seven-hour-title {
+  font-size: 36px;
 }
 
 .date,
@@ -158,11 +77,63 @@ p {
   margin-bottom: 10px;
 }
 
-.conditions-wrapper,
-.date-wrapper {
+.daily-card {
+  border-radius: 10px;
+  background-color: rgba(81, 104, 131, .3);
+  margin: 5px;
+  padding-top: 10px;
+  width:250px;
+  height: 190px;
+}
+
+.daily-cards {
   display: flex;
-  justify-content: center;
-  margin-bottom: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.daily-icon-status {
+  margin-bottom: 7px;
+}
+
+.daily-icon,
+.daily-high,
+.daily-low {
+  margin-bottom: 5px;
+}
+
+.day-of {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.day-of-week {
+  margin: 0 10px 10px 0;
+}
+
+.form-background{
+  border-radius: 10px;
+  background-color: rgba(81, 104, 131, .3);
+  /*height: 610px;*/
+  width:50%;
+  margin: 135px auto 0px auto;
+}
+
+hr {
+  width: 95%;
+  margin: 0 auto 50px auto;
+}
+
+h1{
+  font-size: 36px;
+  margin-bottom: 36px;
+  padding: 15px 0 0 0;
+  font-weight: 600;
+}
+
+.header-content{
+  width:66%;
+  margin: 0 auto 0 auto;
 }
 
 .high-low-wrapper {
@@ -173,28 +144,6 @@ p {
 
 .high {
   margin: 0 10px 10px 0;
-}
-
-.low {
-  margin: 0 0 10px 10px;
-}
-
-.high {
-
-}
-
-.low {
-
-}
-
-.icon {
-  height: 35px;
-  margin: 0 10px 5px 0;
-}
-
-div .ten-day-title,
-div .seven-hour-title {
-  font-size: 36px;
 }
 
 .hourly-card {
@@ -211,34 +160,69 @@ div .seven-hour-title {
   flex-wrap: wrap;
 }
 
-.daily-card {
-  border-radius: 10px;
-  background-color: rgba(81, 104, 131, .3);
-  margin: 5px;
-  padding-top: 10px;
-  width:250px;
-  height: 190px;
+li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-align: left;
 }
 
-.daily-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.icon {
+  height: 35px;
+  margin: 0 10px 5px 0;
 }
 
-.day-of {
-  font-size: 17px;
-  margin-bottom: 10px;
+.location-search {
+  font-size: 1.25em;
+  text-align: left;
+  margin-bottom: 15px;
+  height: 35px;
+  width: 66%;
 }
 
-.daily-icon-status {
-  margin-bottom: 7px;
+.low {
+  margin: 0 0 10px 10px;
 }
 
-.daily-icon,
-.daily-high,
-.daily-low {
+p {
+  font-size: 1.25em;
   margin-bottom: 5px;
+}
+
+.second-search {
+  font-size: 1.25em;
+  text-align: left;
+  margin-bottom: 15px;
+  height: 35px;
+  width: 66%;
+}
+
+.sub-btn {
+  font-size: 15px;
+  height: 35px;
+}
+
+.search-form {*/
+  background-image: url(../images/duck.jpg);
+  background-repeat: cover;
+  background-position: center;*/
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.user-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-header{
+  width: 80%;
+  margin: auto;
+}
+
+.welcome-message {
+  margin:0px auto 450px auto;
+  margin-bottom: 50px;
 }
 
 /*.drop {
