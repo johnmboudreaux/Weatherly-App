@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import App from '../lib/App';
+import App from '../lib/app';
 import localStorage from '../utils/mockLocalStorage';
 // import CurrentWeather from '../lib/CurrentWeather'
 
