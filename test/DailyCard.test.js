@@ -4,7 +4,7 @@ import DailyCard from '../lib/DailyCard';
 
 
 describe('DailyCard', () => {
-  const card ={
+  const card = {
     date: {
       weekday: 'Monday',
       monthname: 'Junish',
