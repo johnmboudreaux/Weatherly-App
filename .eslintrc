@@ -7,9 +7,13 @@
     "node": true
   },
   "rules": {
-    "no-unused-vars": [0],
+    "no-multiple-empty-lines": 0,
+    "max-len": 0,
+    "no-console": 0,
+    "no-alert": 0,
+    "no-unused-vars": 0,
     "no-unused-expressions": 0,
-    "eslint arrow-body-style": 0,
+    "arrow-body-style": 0,
     "quotes": [2, "single"],
     "eol-last": [0],
     "no-mixed-requires": [0],
