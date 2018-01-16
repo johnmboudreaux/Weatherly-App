@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import DailyCard from '../lib/DailyCard';
 
 
@@ -13,8 +13,8 @@ describe('DailyCard', () => {
     icon: 'cloudy',
     icon_url: 'http://www.lowepro.com/assets/img/series/Flipside_II_camera_backpack.jpg',
     high: '30',
-    low: '99',
-  }
+    low: '99'
+  };
   it('should render a date', () => {
     const hourly = shallow(<DailyCard cardObject={card}/>);
 

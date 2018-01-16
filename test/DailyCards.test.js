@@ -1,8 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import DailyCards from '../lib/DailyCards';
-import App from '../lib/App';
-import DailyCard from '../lib/DailyCard';
 import mockData from '../utils/mcDataDaily';
 
 describe('DailyCards', () => {

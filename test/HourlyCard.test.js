@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import HourlyCard from '../lib/HourlyCard';
 
 
@@ -10,8 +10,8 @@ describe('HourlyCard', () => {
     },
     icon: 'cloudy',
     icon_url: 'http://www.lowepro.com/assets/img/series/Flipside_II_camera_backpack.jpg',
-    temp:'30',
-  }
+    temp:'30'
+  };
   it('should render a time', () => {
     const hourly = shallow(<HourlyCard cardObject={card}/>);
 
