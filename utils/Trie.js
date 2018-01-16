@@ -34,9 +34,9 @@ export default class CompleteMe {
     const wordsArray = [...word.toLowerCase()];
     let currentBranch = this.root;
 
-    for (let i = 0; i < wordsArray.length; i++) {
+    for (let index = 0; index < wordsArray.length; index++) {
       if (currentBranch) {
-        currentBranch = currentBranch.child[wordsArray[i]];
+        currentBranch = currentBranch.child[wordsArray[index]];
       }
     }
     return currentBranch;
@@ -54,8 +54,8 @@ export default class CompleteMe {
       const keys = Object.keys(currentBranch.child);
 
 
-      for (let i = 0; i < keys.length; i++) {
-        const child = currentBranch.child[keys[i]];
+      for (let index = 0; index < keys.length; index++) {
+        const child = currentBranch.child[keys[index]];
         const newString = word.toLowerCase() + child.letter;
 
         if (child.isWord) {
@@ -68,11 +68,11 @@ export default class CompleteMe {
     if (currentBranch) {
       trieTraversal(word, currentBranch);
     }
-    suggestion.sort((a, b) => {
-      return b.frequency - a.frequency;
+    suggestion.sort((alpha, beta) => {
+      return beta.frequency - alpha.frequency;
     });
-    const suggestionArray = suggestion.map(obj => {
-      return obj.value;
+    const suggestionArray = suggestion.map(object => {
+      return object.value;
     });
     return suggestionArray;
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import {shallow, mount} from 'enzyme';
 import App from '../lib/app';
 import localStorage from '../utils/mockLocalStorage';
 // import CurrentWeather from '../lib/CurrentWeather'
@@ -18,11 +18,11 @@ describe('App', () => {
 
     app.setState({
       today: {
-        date: '11/23/1985',
-      },
+        date: '11/23/1985'
+      }
     });
 
-    expect(app.state('today')).toEqual({ date: '11/23/1985' });
+    expect(app.state('today')).toEqual({date: '11/23/1985'});
   });
 
   it('should change state for ten day ', () => {
@@ -33,15 +33,15 @@ describe('App', () => {
     app.setState({
       tenDay: [
         {
-          date: '11/23/1985',
-        },
-      ],
+          date: '11/23/1985'
+        }
+      ]
     });
 
     expect(app.state('tenDay')).toEqual([
       {
-        date: '11/23/1985',
-      },
+        date: '11/23/1985'
+      }
     ]);
   });
 
@@ -52,11 +52,11 @@ describe('App', () => {
 
     app.setState({
       currentCity: {
-        Denver: 'Denver',
-      },
+        Denver: 'Denver'
+      }
     });
 
-    expect(app.state('currentCity')).toEqual({ Denver: 'Denver' });
+    expect(app.state('currentCity')).toEqual({Denver: 'Denver'});
   });
 
   it('should change state hourly cards', () => {
@@ -67,15 +67,15 @@ describe('App', () => {
     app.setState({
       hourlyCards: [
         {
-          date: '11/23/1985',
-        },
-      ],
+          date: '11/23/1985'
+        }
+      ]
     });
 
     expect(app.state('hourlyCards')).toEqual([
       {
-        date: '11/23/1985',
-      },
+        date: '11/23/1985'
+      }
     ]);
   });
 });
