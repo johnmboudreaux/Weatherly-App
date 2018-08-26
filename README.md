@@ -10,17 +10,17 @@
 
 ### A few thougts
 
-1. What aspect of your submission are you most proud of, and why?
+#### What aspect of your submission are you most proud of, and why?
 
 I am very proud that I was able to figure out how graphQL works. It has crossed my path before, but didn't understand what it was nor how it worked. I was in school at the time, where it didnt apply, so I didn't have the time to get to know it. This challenge gave me the drive and opporunity to actaully dive into it and come out on the other end with knowledge that I didnt have before. It is a really cool technology and I'm pumped about been able to learn some of it!
 
 
-1. What would you work on if you had more time? What features might you add to this type of product?
+#### What would you work on if you had more time? What features might you add to this type of product?
 
 A booking feature would be a nice addition as well as a way to ask questions about the venues. A calendar that shows blocked out dates for each venue would be helpful too, just to have that visibility if I was considering a venue for booking.
 
 
-1. Of all the resources (blog posts, tutorials, videos, mentors etc.) you referenced, what was most helpful for you?
+#### Of all the resources (blog posts, tutorials, videos, mentors etc.) you referenced, what was most helpful for you?
 
 The Apollo docs are pretty solid. They bailed me out a couple of times. I also really like medium blogs. They are generally pretty solid and contain good readable content that is helpful. 
 	
