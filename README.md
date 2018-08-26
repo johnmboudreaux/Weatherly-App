@@ -8,7 +8,7 @@
 	- run `npm run server` in one console to start the server on port 3001
 	- run `npm start` in another console to start the react app on port 3000
 
-* A few thougts
+### A few thougts
 
 1. What aspect of your submission are you most proud of, and why?
 	I am very proud that I was able to figure out how graphQL works. It has crossed my path before, but didn't understand what it was nor how it worked. I was in school at the time, where it didnt apply, so I didn't have the time to get to know it. This challenge gave me the drive and opporunity to actaully dive into it and come out on the other end with knowledge that I didnt have before. It is a really cool technology and I'm pumped about been able to learn some of it!
